@@ -161,3 +161,7 @@ Average Weapon Accuracy
 IDK... Just trying to spark conversation for people way smarter than I am to design some type of ML for detection....
 
 Maybe nothing will ever happen because people keep making purchases in the stores for DAT NEXT SICK SKIN... lol
+
+Happy gaming,
+
+ZeroBandwidth
