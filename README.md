@@ -1,5 +1,6 @@
 # How to detect FPS hackers in any game with Elastic 
 
+
 FPS are dead because of hackers and nobody can seem to figure it out? BS. Companies need to change the way they are trying to detect cheaters… Software and Hardware hacks are pretty freaking easy to use and close to impossible to keep up with. 
 
 This is how I would fix the overall cheating found in FPS games today. 
@@ -105,3 +106,10 @@ If I can find hackers in a network after digging through petabytes of PCAP data 
 IDK... Just trying to spark conversation for people way smarter than I am to design Elastic ML cookbooks...
 
 Or nothing will ever happen because companies only shadow ban people and loot boxes are still being purchased... lol
+
+Detect hackers in Warzone
+Detect hackers in Battlefield
+Detect hackers in Fortnite 
+Detect hackers in Valorant
+Detect hackers in PUBG
+
