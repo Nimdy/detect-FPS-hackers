@@ -141,12 +141,12 @@ Detect hackers in PUBG
 Types of meta data needed in logs: (thinking up of more data points for collection)
 
 ```
-Player + Distance to Target Hit
-Player + Distance to Target Hit + Weapon
+Average PDTH    (Player + Distance to Target Hit)
+Average PDTHW   (Player + Distance to Target Hit + Weapon)
  
-Player + Target + Time to Kill + Distance
-Player + Target + Time to Kill + Distance + Reports
-Player + Target + Time to Kill + Hitbox Hit Locations
+Average PTTKD   (Player + Target + Time to Kill + Distance)
+Average PTTKDR  (Player + Target + Time to Kill + Distance + Reports)
+Average PTTKHHL (Player + Target + Time to Kill + Hitbox Hit Locations)
 
 Average Weapon Distance Hit
 Average Weapon Distance Kill
@@ -156,5 +156,7 @@ Average Weapon Distance Kill + Hit Box Location Hit
 
 Average Weapon Time to Kill
 Average Weapon Accuracy
+
+
 
 ```
