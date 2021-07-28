@@ -1,9 +1,9 @@
 # How to detect FPS hackers in any game with Elastic 
 
 My plan here is find others in the community that know how to use Elastic and/or other products to build something ourselfs and give a solution to companies like:
-
+```
 Riot Games, Infinity Ward, Treyarch, Digital Illusions CE, Ubisoft, EA, Bungie, Raven Software, Blizzard Entertainment, Activision...etc.
-
+```
 FPS are dead because of hackers and nobody can seem to figure it out? BS. Companies need to change the way they are trying to detect cheaters… Software and Hardware hacks are pretty freaking easy to use and close to impossible to keep up with. 
 
 This is how I would fix the overall cheating found in FPS games today. 
