@@ -12,6 +12,8 @@ This is how I would fix the overall cheating found in FPS games today with ML/AI
 
 First we need a data set. The examples below are low level design but can scale into all types of elaborate data processing.
 
+Data concepts found at bottom of write-up
+
 Example idea of baseline data charting:
 ```
 Average Kill Range: Player range + target range + weapon range
