@@ -8,7 +8,7 @@ FPS are dead because of hackers and nobody can seem to figure it out? BS. Compan
 
 This is how I would fix the overall cheating found in FPS games today. 
 
-Collect player and weapon stats for baseline data.  As data is being collected then you will need to define multiple types of trend baselines for the game. Then identify acceptable levels gaps within the trend data so any deltas above the trend will trigger a review of suspected cheating.
+Over coming these challenges today will be very easy and a simple solution that starts with the collection player and weapon data.  This data can be used to deterime normal game play baselines.  As data is being collected, a company will need to define baselines based off trend analysis. Trend analysis is the process of comparing collected data over time to identify any consistent trends. These trends will help identify acceptable levels and any event scoring outside the trend will trigger a review for suspected cheating.
 
 Example idea of baseline data charting:
 ```
