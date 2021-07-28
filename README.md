@@ -146,17 +146,16 @@ Average PDTHW   (Player + Distance to Target Hit + Weapon)
  
 Average PTTKD   (Player + Target + Time to Kill + Distance)
 Average PTTKDR  (Player + Target + Time to Kill + Distance + Reports)
-Average PTTKHHL (Player + Target + Time to Kill + Hitbox Hit Locations)
+Average PTTKHHL (Player + Target + Time to Kill + Hitbox Hit Location)
 
 Average Weapon Distance Hit
 Average Weapon Distance Kill
+Average Weapon Hitbox Hit Location
 
 Average Weapon Distance Hit + Hit Box Location Hit
 Average Weapon Distance Kill + Hit Box Location Hit
 
 Average Weapon Time to Kill
 Average Weapon Accuracy
-
-
 
 ```
