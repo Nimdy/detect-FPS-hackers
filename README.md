@@ -4,11 +4,13 @@ My plan here is find others in the community that know how to use Elastic and/or
 ```
 Riot Games, Infinity Ward, Treyarch, Digital Illusions CE, Ubisoft, EA, Bungie, Raven Software, Blizzard Entertainment, Activision...etc.
 ```
-FPS are dead because of hackers and nobody can seem to figure it out? BS. Companies need to change the way they are trying to detect cheaters… Software and Hardware hacks are pretty freaking easy to use and close to impossible to keep up with. 
-
-This is how I would fix the overall cheating found in FPS games today. 
+First Person Shooters(FPS) are pretty much unplayable and dead because of the amount of script kiddies using software/hardware hacks in pretty much every game.  Software and Hardware hacks are pretty freaking easy to use and close to impossible to keep up with. Companies need to change the way they are trying to detect cheaters and implement machine learning(ML) and artificial intelligence(AI) technology. 
 
 Over coming these challenges today will be very easy and a simple solution that starts with the collection player and weapon data.  This data can be used to deterime normal game play baselines.  As data is being collected, a company will need to define baselines based off trend analysis. Trend analysis is the process of comparing collected data over time to identify any consistent trends. These trends will help identify acceptable levels and any event scoring outside the trend will trigger a review for suspected cheating.
+
+This is how I would fix the overall cheating found in FPS games today with ML/AI through Elastic.
+
+First we need a data set. The examples below are low level design but can scale into all types of elaborate data processing.
 
 Example idea of baseline data charting:
 ```
@@ -17,9 +19,8 @@ Average Player Accuracy (Hit any location on Target Box)
 Average Target Box Locations Hit (Head, Body, Limbs)
 Player Reported for cheating
 ```
-Example of how this works with small numbers.
 
-Let’s say there are only three guns 
+Let’s say only three guns are used in a game.
 ```
 Big Gun - Long Range
 Medium Gun - Medium Range
@@ -35,19 +36,19 @@ Break down example of baseline player data:
 ```
 Break down examples of baseline weapon data.
 
-Big Gun Data:
+Average Big Gun Data:
 ```
 The average distance of Player + target + kill = 100 meters
 The average accuracy is 50%
 The average target box locations hit: Head: 50% Body: 40% Limbs: 10
 ```
-Medium Gun Data:
+Average Medium Gun Data:
 ```
 The average distance of Player + target + kill = 50 meters
 The average accuracy is 40%
 The average target box locations hit: Head: 30% Body: 60% Limbs: 10
 ```
-Small Gun Data:
+Average Small Gun Data:
 ```
 The average distance of Player + target + kill = 10 meters
 The average accuracy is 80%
@@ -75,7 +76,7 @@ The average distance of Player + target + kill = 25 meters
 The average accuracy is 90%
 The average target box locations hit: Head: 40% Body: 60% Limbs: <1%
 ```
-Now if any player stats reflect way outside the normal - then flag for possible cheating and review
+Now if any player stats trigger outside the trend baseline - then flag for possible cheating and review
 
 Let’s say the cheater stats are:
 
@@ -99,8 +100,6 @@ The average target box locations hit: Head: 40% Body: 60% Limbs: <1%
 ```
 The cheater stats are way outside of the average baseline data collected.
 
-Hear me out… This was just a simple low level example of data comparison and can become very complex in the different mathematical formulas used to build out different trend models.
-
 Additional examples of detection are:
 ```
 Player + Target + Time to Kill + Distance
@@ -109,7 +108,8 @@ Player + Target + Time to Kill + Hitbox Hit Locations
 ```
 Companies cry out saying they do not have the resources to watch every player and respond to every report, coupled with the validation process.
 
-OKAY GREAT!  Now let the ML and AI identify these for the company and it will limit the resources required for validation. If you took the baseline data + the player reported data, then you will have a more surgical process for identifying cheaters from a game.
+OKAY GREAT!  Now let the ML and AI identify these for the company and it will limit the resources required for validation. 
+If you took the baseline trend data + the player data + reported data, then you will have a more surgical process for identifying cheaters from a game.
 
 Elastic can do this pretty damn easily...
 
