@@ -117,9 +117,6 @@ Elastic can do this pretty damn easily...
 
 If I can find hackers in a network after digging through petabytes of PCAP data without ML or AI, then I know this can be completed. 
 
-IDK... Just trying to spark conversation for people way smarter than I am to design Elastic ML cookbooks...
-
-Or nothing will ever happen because companies only shadow ban people and loot boxes are still being purchased... lol
 
 If somebody says:
 So what if this works, script kiddies will still use hacks and lower the ML/AI to the averages, still maintaining a edge. 
@@ -161,3 +158,6 @@ Average Weapon Time to Kill
 Average Weapon Accuracy
 
 ```
+IDK... Just trying to spark conversation for people way smarter than I am to design some type of ML for detection....
+
+Maybe nothing will ever happen because people keep making purchases in the stores for DAT NEXT SICK SKIN... lol
