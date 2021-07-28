@@ -119,9 +119,16 @@ IDK... Just trying to spark conversation for people way smarter than I am to des
 
 Or nothing will ever happen because companies only shadow ban people and loot boxes are still being purchased... lol
 
+
+```
 Detect hackers in Warzone
+
 Detect hackers in Battlefield
+
 Detect hackers in Fortnite 
+
 Detect hackers in Valorant
+
 Detect hackers in PUBG
 
+```
