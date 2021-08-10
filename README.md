@@ -1,4 +1,4 @@
-# How to detect FPS hackers in any game with Elastic 
+# How to detect FPS hackers in any game with Elastic Search or Splunk 
 
 My plan here is find others in the community that know how to use Elastic and/or other products to build something ourselfs and give a solution to companies like:
 ```
