@@ -119,10 +119,10 @@ If I can find hackers in a network after digging through petabytes of PCAP data 
 
 
 If somebody says:
-So what if this works, script kiddies will still use hacks and lower the ML/AI to the averages, still maintaining a edge. 
+So what if this works, script kiddies will still use hacks and lower the ML/AI cheating software to the averages, still maintaining a edge. 
 
 I would say:
-This would be a good thing because lowering the ML/AI to the trends would not ruin the game. This is because the players not using cheats would at least have a better chance at over coming the cheaters. Since nobody is doing this already, we dont know what the outcome would be... So I am guessing, it would just lower the amount of cheaters out there because at this point it just would not be worth it. This coupled with the fact companies are using this for detection, would also become a deterrent.
+This would be a good thing because lowering the ML/AI cheat software to the trends would not ruin the game. This is because the players not using cheats would at least have a better chance at over coming the cheaters. Since nobody is doing this already, we dont know what the outcome would be... So I am guessing, it would just lower the amount of cheaters out there because at this point it just would not be worth it. This coupled with the fact companies are using this for detection, would also become a deterrent.
 
 ```
 Detect hackers in Warzone
@@ -137,7 +137,7 @@ Detect hackers in PUBG
 
 ```
 
-Types of meta data needed in logs: (thinking up of more data points for collection)
+Types of meta data needed in logs: (thinking up of more data points for collection and of course these metrics need to be programmed into the game)
 
 ```
 Average PDTH    (Player + Distance to Target Hit)
