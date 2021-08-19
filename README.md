@@ -8,11 +8,13 @@ First Person Shooters(FPS) are pretty much unplayable and dead because of the am
 
 Over coming these challenges today will be very easy and a simple solution that starts with the collection player and weapon data.  This data can be used to deterime normal game play baselines.  As data is being collected, a company will need to define baselines based off trend analysis. Trend analysis is the process of comparing collected data over time to identify any consistent trends. These trends will help identify acceptable levels and any event scoring outside the trend will trigger a review for suspected cheating.
 
-This is how I would fix the overall cheating found in FPS games today with ML/AI through Elastic.
+This is how I would fix the overall cheating found in FPS games today with ML/AI through Elastic Search.
 
-First we need a data set. The examples below are low level design but can scale into all types of elaborate data processing.
+First we need a data set and I have had zero luck so far getting sample data from any company. I believe none of these companies are programming metric data collection in their games at this time and/or if they are; they are focusing on the wrong stuff (hardware scans for example). 
 
-Data concepts found at bottom of write-up
+The examples below are low level design but can scale into all types of elaborate data processing.
+
+*Additional data concepts found at bottom of write-up*
 
 Example idea of baseline data charting:
 ```
@@ -158,7 +160,9 @@ Average Weapon Time to Kill
 Average Weapon Accuracy
 
 ```
-IDK... Just trying to spark conversation for people way smarter than I am to design some type of ML for detection....
+IDK... Just trying to spark conversation for people way smarter than I am to help me design and define a new standard in identifing cheaters in any game. 
+
+I believe if you ever want to stand a chance in defeating cheaters that are using ML/AI, you need to fight back with ML/AI detection methods.
 
 Maybe nothing will ever happen because people keep making purchases in the stores for DAT NEXT SICK SKIN... lol
 
