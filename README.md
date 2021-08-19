@@ -159,6 +159,10 @@ Average Weapon Distance Kill + Hit Box Location Hit
 Average Weapon Time to Kill
 Average Weapon Accuracy
 
+Account Age
+Account Skill Trend
+Account Total Time Played
+Account Times Reported
 ```
 IDK... Just trying to spark conversation for people way smarter than I am to help me design and define a new standard in identifing cheaters in any game. 
 
