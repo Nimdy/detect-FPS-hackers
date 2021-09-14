@@ -6,11 +6,13 @@ Riot Games, Infinity Ward, Treyarch, Digital Illusions CE, Ubisoft, EA, Bungie, 
 ```
 First Person Shooters(FPS) are pretty much unplayable and dead because of the amount of script kiddies using software/hardware hacks in pretty much every game.  Software and Hardware hacks are pretty freaking easy to use and close to impossible to keep up with. Companies need to change the way they are trying to detect cheaters and implement machine learning(ML) and artificial intelligence(AI) technology. 
 
-Over coming these challenges today will be very easy and a simple solution that starts with the collection player and weapon data.  This data can be used to deterime normal game play baselines.  As data is being collected, a company will need to define baselines based off trend analysis. Trend analysis is the process of comparing collected data over time to identify any consistent trends. These trends will help identify acceptable levels and any event scoring outside the trend will trigger a review for suspected cheating.
+Over coming these challenges today is very easy and a simple solution coupled with the collection player and weapon data is the answer.  This data can be used to deterime normal game play baselines.  As data is being collected, a company will need to define baselines from trend analysis. Trend analysis is the process of comparing collected data over time to identify any consistent trends. These trends will help identify acceptable levels and any event scoring outside the trend will trigger a review for suspected cheating.
 
 This is how I would fix the overall cheating found in FPS games today with ML/AI through Elastic Search.
 
-First we need a data set and I have had zero luck so far getting sample data from any company. I believe none of these companies are programming metric data collection in their games at this time and/or if they are; they are focusing on the wrong stuff (hardware scans for example). 
+First we need a data set and I have had zero luck so far getting sample data from any company. I believe none of these companies are programming meta data collection metrics in their games at the correct level needed to detect cheaters. Well, correction they are but I believe the focus is in the wrong area (hardware/memory scans for IOC | hashes). 
+
+Everything below is doable and needs to be scripted for meta data collection.  This will not require a lot of disk space... its meta data. The resources doing all the work will need testing and optimization.   
 
 The examples below are low level design but can scale into all types of elaborate data processing.
 
