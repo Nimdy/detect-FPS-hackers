@@ -61,7 +61,7 @@ The average distance of Player + target + kill = 10 meters
 The average accuracy is 80%
 The average target box locations hit: Head: 20% Body: 60% Limbs: 20
 ```
-Example of how cheating would be identified with Machine Learning(ML) and Artificial Intelligence(AI)
+Example of how cheating would be identified with Machine Learning(ML) through anomaly detection models. 
 
 Let’s say the average God-like skilled players weapon stats are as follows:
 
@@ -114,23 +114,6 @@ Player + Target + Time to Kill + Distance + Reports
 Player + Target + Time to Kill + Hitbox Hit Locations
 ```
 
-Elastic can do this pretty damn easily...
-
-If I can find hackers in a network after digging through petabytes of PCAP data without ML or AI, then I know this can be completed. 
-
-
-```
-Detect hackers in Warzone
-
-Detect hackers in Battlefield
-
-Detect hackers in Fortnite 
-
-Detect hackers in Valorant
-
-Detect hackers in PUBG
-
-```
 
 Types of meta data needed in logs: (thinking up of more data points for collection and of course these metrics need to be programmed into the game)
 
@@ -161,6 +144,11 @@ IDK... Just trying to spark conversation for people way smarter than I am to hel
 
 I believe if you ever want to stand a chance in defeating cheaters that are using ML/AI, you need to fight back with ML/AI detection methods.
 
+Again, my experience with ML is with only using anomaly detection models.  
+
+If you want to better understand my mindset and why I think this would work, take a look at https://www.elastic.co/guide/en/machine-learning/current/anomaly-examples.html
+
+I know there is all types of ML/AI uses and the majority of them our side of my experience but I am always willing to learn more from experts and fellow nerds.
 
 Happy gaming,
 
