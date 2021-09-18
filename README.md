@@ -1,14 +1,15 @@
 # How to detect FPS hackers in any game with Elastic Search or Splunk 
 
+(Cleaning up write - everything below is data collection points for anomaly detection models - @valkmit thanks for the input - DISCLAIMER: I am not a expert in ML/AL but I do have a few years of anomaly detection using ML within Elastic. I am on the thought process of "If I can apply the same concepts to gaming as I can do with cyber, then maybe it could work")
+
 My plan here is find others in the community that know how to use Elastic and/or other products to build something ourselfs and give a solution to companies like:
 ```
 Riot Games, Infinity Ward, Treyarch, Digital Illusions CE, Ubisoft, EA, Bungie, Raven Software, Blizzard Entertainment, Activision...etc.
 ```
 First Person Shooters(FPS) are pretty much unplayable and dead because of the amount of script kiddies using software/hardware hacks in pretty much every game.  Software and Hardware hacks are pretty freaking easy to use and close to impossible to keep up with. Companies need to change the way they are trying to detect cheaters and implement machine learning(ML) and artificial intelligence(AI) technology. 
 
-Over coming these challenges today is very easy and a simple solution coupled with the collection player and weapon data is the answer.  This data can be used to deterime normal game play baselines.  As data is being collected, a company will need to define baselines from trend analysis. Trend analysis is the process of comparing collected data over time to identify any consistent trends. These trends will help identify acceptable levels and any event scoring outside the trend will trigger a review for suspected cheating.
+Over coming these challenges today is very easy and a simple solution coupled with the collection player and weapon data could be the answer.  This data can be used to deterime normal game play baselines.  As data is being collected, a company will need to define baselines from trend analysis. Trend analysis is the process of comparing collected data over time to identify any consistent trends. These trends will help identify acceptable levels and if any event scores outside the trend will trigger a review for suspected cheating.
 
-This is how I would fix the overall cheating found in FPS games today with ML/AI through Elastic Search.
 
 First we need a data set and I have had zero luck so far getting sample data from any company. I believe none of these companies are programming meta data collection metrics in their games at the correct level needed to detect cheaters. Well, correction they are but I believe the focus is in the wrong area (hardware/memory scans for IOC | hashes). 
 
@@ -112,21 +113,11 @@ Player + Target + Time to Kill + Distance
 Player + Target + Time to Kill + Distance + Reports
 Player + Target + Time to Kill + Hitbox Hit Locations
 ```
-Companies cry out saying they do not have the resources to watch every player and respond to every report, coupled with the validation process.
-
-OKAY GREAT!  Now let the ML and AI identify these for the company and it will limit the resources required for validation. 
-If you took the baseline trend data + the player data + reported data, then you will have a more surgical process for identifying cheaters from a game.
 
 Elastic can do this pretty damn easily...
 
 If I can find hackers in a network after digging through petabytes of PCAP data without ML or AI, then I know this can be completed. 
 
-
-If somebody says:
-So what if this works, script kiddies will still use hacks and lower the ML/AI cheating software to the averages, still maintaining a edge. 
-
-I would say:
-This would be a good thing because lowering the ML/AI cheat software to the trends would not ruin the game. This is because the players not using cheats would at least have a better chance at over coming the cheaters. Since nobody is doing this already, we dont know what the outcome would be... So I am guessing, it would just lower the amount of cheaters out there because at this point it just would not be worth it. This coupled with the fact companies are using this for detection, would also become a deterrent.
 
 ```
 Detect hackers in Warzone
@@ -170,7 +161,6 @@ IDK... Just trying to spark conversation for people way smarter than I am to hel
 
 I believe if you ever want to stand a chance in defeating cheaters that are using ML/AI, you need to fight back with ML/AI detection methods.
 
-Maybe nothing will ever happen because people keep making purchases in the stores for DAT NEXT SICK SKIN... lol
 
 Happy gaming,
 
