@@ -148,6 +148,9 @@ Again, my experience with ML is with only using anomaly detection models.
 
 If you want to better understand my mindset and why I think this would work, take a look at https://www.elastic.co/guide/en/machine-learning/current/anomaly-examples.html
 
+Some examples with Elastic. https://www.youtube.com/watch?v=wPd_JWWfre4
+
+
 I know there is all types of ML/AI uses and the majority of them our side of my experience but I am always willing to learn more from experts and fellow nerds.
 
 Happy gaming,
