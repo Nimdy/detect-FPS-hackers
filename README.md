@@ -152,7 +152,7 @@ Some examples with Elastic. https://www.youtube.com/watch?v=wPd_JWWfre4
 
 Figured if we can get the meta data for the examples listed above, then we can play around with it and get it working within Elastic.
 
-I know there is all types of ML/AI uses and the majority of them our side of my experience but I am always willing to learn more from experts and fellow nerds.
+I know there is all types of ML/AI uses and the majority of them are out side of my experience but I am always willing to learn from fellow nerds.
 
 Happy gaming,
 
