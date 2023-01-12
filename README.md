@@ -236,6 +236,92 @@ In this example, the GameData table has a primary key made up of two attributes:
 This is just a simple example, in practice the table structure and attributes could vary depending on the data that needs to be collected and the analysis that will be done on it. Additionally, it's important to add secondary indexes to the table to optimize query and access patterns, and also to include a partition key to spread the data across multiple partitions for better performance.
 
 
+## DynamoDB and algorithm for ML
+
+Here's an example of an algorithm that could be used to analyze the game data stored in the DynamoDB table structure provided in the previous answer:
+
+1. Retrieve data from the GameData table using the primary key (GameID and Timestamp) and any additional filters (PlayerRank, WeaponName, etc)
+2. Group the data by PlayerID and calculate the average values for each metric (KillDistance, Accuracy, HitboxLocation, Reports)
+3. Compare the calculated averages to the established baselines for each skill level.
+4. For each player, if any metric is outside of the established baselines, flag the player as a potential cheater and add them to a review queue.
+5. Review the flagged players' data manually to confirm if they are actually cheating or not.
+
+This algorithm is based on the idea of anomaly detection, which is a common approach used in machine learning to identify patterns or behaviors that deviate from the norm. By comparing the players' data to the established baselines, the algorithm can identify any players whose data is significantly different from what is considered normal, which can indicate cheating.
+
+A algorithm example would be like this:
+
+1. KillDistance:
+- Sum of all the KillDistance values for each player: Sum(Player_i.KillDistance)
+- Average KillDistance per player: Sum(Player_i.KillDistance) / Count(Player_i.Kills)
+
+2. Accuracy:
+- Sum of all the number of successful hits for each player: Sum(Player_i.Hits)
+- Average Accuracy per player: Sum(Player_i.Hits) / Count(Player_i.Shots)
+
+3. HitboxLocation:
+- Sum of all the number of head shots for each player: Sum(Player_i.Headshots)
+- Average HitboxLocation per player: Sum(Player_i.Headshots) / Count(Player_i.Kills)
+
+4. Reports:
+- Sum of all the number of reports for each player: Sum(Player_i.Reports)
+- Average Reports per player: Sum(Player_i.Reports) / Count(Player_i.Games)
+
+I suck at math but these equations are simple and the actual calculations will depend on the specific data that is being collected and the analysis that needs to be done on it. It's important to consider the whole data set and not just one player, as the algorithm is meant to establish baselines and compare them to the data from all players.
+
+
+## Here's an example of how a cheating player's stats might differ from a non-cheating player's stats:
+
+Cheating player:
+
+- KillDistance: 200 meters (average)
+- Accuracy: 90% (average)
+- HitboxLocation: Headshots: 80% (average)
+- Reports: 2 (average)
+
+Non-cheating player:
+
+- KillDistance: 100 meters (average)
+- Accuracy: 60% (average)
+- HitboxLocation: Headshots: 50% (average)
+- Reports: 0 (average)
+
+The cheating player has significantly higher averages for KillDistance and Accuracy, and a higher percentage of headshots, compared to the non-cheating player. Additionally, the cheating player has more reports than the non-cheating player. These stats would be flagged as anomalous, and if they are consistent across a significant number of rounds, the player would be marked as a potential cheater and would be reviewed manually.
+
+This example is based on assumptions, and a real-world scenario would require a lot of data and a lot of players to establish a clear baseline but if Call of Duty was doing this from day one... I would not be here writing this all out.
+
+It's also important to note that not all players who deviate from the established baselines will be cheating and some legitimate players may have unique playing styles or strategies that account for the differences in their stats.
+
+Example a god-like non-cheating player:
+
+Non-cheating god-like player:
+
+- KillDistance: 150 meters (average)
+- Accuracy: 85% (average)
+- HitboxLocation: Headshots: 75% (average)
+- Reports: 0 (average)
+
+A god-like player is assumed to have exceptional skills and they tend to have higher averages than non-cheating players in terms of kill distance and accuracy, and a higher percentage of headshots due to their aiming and aiming skills. Their stats would still fall within the established baselines for their skill level and would not be flagged as anomalous or potential cheating. It's important to note that legitimate players may have unique playing styles or strategies that account for the differences in their stats and don't necessarily indicate cheating.
+
+## Determining a player's play style
+
+To determine a non-cheating player's play style based on the metrics, you could analyze the following characteristics:
+
+- Times a player jumps: A player's jumping frequency can provide insight into their play style. For example, a player who frequently jumps may have a more aggressive play style, while a player who rarely jumps may have a more defensive play style.
+- Routes the player commonly takes on the map: A player's common routes can provide insight into their play style. For example, a player who consistently takes a specific route may have a more aggressive play style, while a player who frequently changes routes may have a more defensive play style.
+- Reloading characteristics: A player's reloading habits can provide insight into their play style. For example, a player who frequently reloads may have a more cautious play style, while a player who rarely reloads may have a more aggressive play style.
+- Weapon swapping characteristics: A player's weapon swapping habits can provide insight into their play style. For example, a player who frequently swaps weapons may have a more versatile play style, while a player who consistently uses the same weapon may have a more specialized play style.
+- Movement speed: A player's movement speed can provide insight into their play style. For example, a player who moves quickly may have a more aggressive play style, while a player who moves slowly may have a more defensive play style.
+- Aiming patterns: A player's aiming patterns can provide insight into their play style. For example, a player who consistently aims for headshots may have a more aggressive play style, while a player who consistently aims for body shots may have a more defensive play style.
+- Peek timings: A player's peek timings can provide insight into their play style. For example, a player who frequently peeks may have a more aggressive play style, while a player who rarely peeks may have a more defensive play style.
+- Cover usage: A player's cover usage can provide insight into their play style. For example, a player who frequently uses cover may have a more defensive play style, while a player who rarely uses cover may have a more aggressive play style.
+
+
+Comparing metric data is one of the most effective ways to detect cheaters in online video games because cheating software has become so advanced. Cheating software can be used to manipulate many aspects of the game, including aim assist, no recoil, wall hacks, and many others. These cheats can make it difficult to detect cheaters using traditional methods, such as scanning for specific software or hardware on a player's device.
+
+This is why I believe comparing data is the most effective way to detect cheaters by identifing patterns and anomalies that are indicative of cheating.
+
+
+
 Happy gaming,
 
 ZeroBandwidth
