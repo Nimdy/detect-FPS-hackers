@@ -1,6 +1,10 @@
 # How to detect FPS hackers in any game with Elastic Search or Splunk 
 
-(Cleaning up write - everything below is data collection points for anomaly detection models - @valkmit thanks for the input - DISCLAIMER: I am not a expert in ML/AL but I do have a few years of anomaly detection using ML within Elastic. I am on the thought process of "If I can apply the same concepts to gaming as I can do with cyber, then maybe it could work")
+Executive Summary:
+
+FPS games are pretty much unplayable and dead because of the amount of script kiddies using software/hardware hacks. This write-up presents a solution to detect FPS hackers using Elastic Search or Splunk, coupled with machine learning (ML) and artificial intelligence (AI) technology. The core idea is to collect player and weapon data to establish normal gameplay baselines. By analyzing metrics like average kill range, player accuracy, target box locations hit, and player reports, we can identify cheaters whose stats fall way outside these baselines.
+
+This system uses cloud-based storage and processing, with DynamoDB recommended for its scalability and performance. It's designed to overcome the challenges of traditional anti-cheat methods by making it harder for cheaters to bypass and adapting to new hacking techniques. The approach accounts for different skill levels, from below average to God-like, ensuring legit skilled players aren't falsely flagged. Implementing this system could help gaming companies like Riot Games, Infinity Ward, and others to combat cheating effectively, potentially reviving the FPS genre and improving player satisfaction.
 
 My plan here is find others in the community that know how to use Elastic and/or other products to build something ourselfs and give a solution to companies like:
 ```
